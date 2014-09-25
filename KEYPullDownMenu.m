@@ -181,7 +181,7 @@
     [viewController.view addSubview:pullDownView];
     [UIView animateWithDuration:kKEYPullDownAnimationDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:
     ^{
-        [pullDownView setFrame:CGRectZero];
+        [pullDownView setFrame:pullDownView.finalFrame];
     }
     completion:^(BOOL finished)
     {
